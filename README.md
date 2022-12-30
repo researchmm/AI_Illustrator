@@ -5,4 +5,4 @@ This reposity is the official implementation of <a href="https://arxiv.org/abs/2
 
 The proposed pipeline is shown below.
 
-<img src="/figs/overview.pdf" width="100%">  
+<img src="/figs/overview.png" width="100%">  
