@@ -8,7 +8,7 @@ The proposed pipeline is shown below.
 <img src="/figs/overview.png" width="100%">  
 
 ## Usage
-<b> Pretrained Models </b>
+### Pretrained Models
 
 Currently, we support pretrained models on 3 domains: Human face, Cat and Church. The download urls are:
 
@@ -20,7 +20,7 @@ Currently, we support pretrained models on 3 domains: Human face, Cat and Church
 
 The default path of pretrained models is ```./pretrained_projectors```.
 
-<b> Generating </b>
+### Generating
 
 After downloading the pretrained models, you can simply generate images by command
 
@@ -32,3 +32,14 @@ One example is
 
 The values of argument "kind", "projector_path" and "prompt_path" should match.
 By default, "kind" should be one of "human", "cat" and "church".
+
+
+### Benchmarking
+
+100 raw descriptions can be found in ```./benchmark/description_benchmark_100.txt```
+
+Corresponding generation results of our method can be download at
+
+|Baidu Disk|Google Drive|One Drive|
+|----|----|----|
+|TBD|TBD|TBD|
