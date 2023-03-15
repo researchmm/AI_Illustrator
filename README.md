@@ -31,3 +31,4 @@ One example is
      python single_generate.py --kind 'human' --projector_path './pretrained_projector/c2s_human.pth' --save_path './outputs' --strength 1.75 --prompt_path './prompts/ffhq_text_prompt.pth'
 
 The values of argument "kind", "projector_path" and "prompt_path" should match.
+By default, "kind" should be one of "human", "cat" and "church".
