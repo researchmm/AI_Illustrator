@@ -15,8 +15,8 @@ Currently, we support pretrained models on 3 domains: Human face, Cat and Church
 | |Human face|Cat|Church|
 |----|----|----|----|
 |Baidu Disk|https://pan.baidu.com/s/1wDVj_YGYQoQlRDk5tTtL8A, <br /> extracting code: huzx|https://pan.baidu.com/s/1UIhCBL2Cl9CenjjCNsbHJw, <br /> extracting code: 7ul6 |https://pan.baidu.com/s/1WTrWgrjs9FD8o4ZyoQalxg, <br /> extracting code: hffh|
-|Google Drive|p|p|p|
-|One Drive|p|p|p|
+|Google Drive|TBD|TBD|TBD|
+|One Drive|https://1drv.ms/u/s!Aq9epwaFQGaOgQpUdtd81YWh_TVe?e=5vuPjD|https://1drv.ms/u/s!Aq9epwaFQGaOgQwjbTUXjYgw-g_z?e=lTg9lX|https://1drv.ms/u/s!Aq9epwaFQGaOgQ1foRYeby5jHR96?e=g4yq8G|
 
 The default path of pretrained models is ```./pretrained_projectors```.
 
