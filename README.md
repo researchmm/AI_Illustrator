@@ -14,7 +14,7 @@ Currently, we support pretrained models on 3 domains: Human face, Cat and Church
 
 | |Human face|Cat|Church|
 |----|----|----|----|
-|Baidu Disk|p|p|p|
+|Baidu Disk|https://pan.baidu.com/s/1wDVj_YGYQoQlRDk5tTtL8A, <br /> extracting code: huzx|https://pan.baidu.com/s/1UIhCBL2Cl9CenjjCNsbHJw, <br /> extracting code: 7ul6 |https://pan.baidu.com/s/1WTrWgrjs9FD8o4ZyoQalxg, <br /> extracting code: hffh|
 |Google Drive|p|p|p|
 |One Drive|p|p|p|
 
