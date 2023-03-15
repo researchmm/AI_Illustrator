@@ -21,6 +21,7 @@ if __name__ == '__main__':
     parser.add_argument('--strength', type=float, default=1.75)
     parser.add_argument('--random_generate', action='store_true')
     parser.add_argument('--random_layer', type=int, default=1)
+    parser.add_argument('--prompt_path', type=int, default='./prompts/ffhq_text_prompt.pth')
     args = parser.parse_args()
 
     print_wt('Manuscript starts.')
@@ -35,8 +36,6 @@ if __name__ == '__main__':
         StyleGAN_total_checkpoint = torch.utils.model_zoo.load_url(
             'http://download.openmmlab.com/mmgen/stylegan2/official_weights/stylegan2-ffhq-config-f'
             '-official_20210327_171224-bce9310c.pth')
-        clip_image_embeds = torch.load(
-            './SE_CIE_pairs/Style_CLIP_pairs_ffhq_train_w_norm_512.pth')
         source_text = 'A normal human face.'
 
     elif args.kind == 'cat':
@@ -44,8 +43,6 @@ if __name__ == '__main__':
         StyleGAN_total_checkpoint = torch.utils.model_zoo.load_url(
             'http://download.openmmlab.com/mmgen/stylegan2/official_weights/stylegan2-cat-config-f'
             '-official_20210327_172444-15bc485b.pth')
-        clip_image_embeds = torch.load(
-            './SE_CIE_pairs/Style_CLIP_pairs_cat_train_w_norm_512.pth')
         source_text = 'A Cat.'
 
     elif args.kind == 'church':
@@ -53,8 +50,6 @@ if __name__ == '__main__':
         StyleGAN_total_checkpoint = torch.utils.model_zoo.load_url(
             'http://download.openmmlab.com/mmgen/stylegan2/official_weights/stylegan2-church-config-f'
             '-official_20210327_172657-1d42b7d1.pth')
-        clip_image_embeds = torch.load(
-            './SE_CIE_pairs/Style_CLIP_pairs_church_train_w_norm_512.pth')
         source_text = 'A normal church.'
 
     else:
@@ -72,9 +67,7 @@ if __name__ == '__main__':
     StyleGAN_Gen.eval()
     preprocess = my_preprocess()
 
-    avg_clip_embed = torch.mean(clip_image_embeds['CLIP_latent'], dim=0).unsqueeze(0).cuda()
-    avg_clip_embed = avg_clip_embed / avg_clip_embed.norm(dim=-1, keepdim=True)
-    avg_clip_embed *= 512 ** 0.5
+    avg_clip_embed = torch.load(args.prompt_path).cuda()
 
     generate_rank = 1
     while True:
