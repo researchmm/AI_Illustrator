@@ -14,7 +14,6 @@ from models.stylegan2 import generator_discriminator
 from models import clip2style
 from data_pipes import data_clip2style
 import loss
-import build_demo
 
 TRAIN_LATENT_PATH = '/home/v-yiyangma/local_codes/PCM-Frame/training_datas/Style_CLIP_pairs_cat_train_w_norm_512.pth'
 TEST_LATENT_PATH = '/home/v-yiyangma/local_codes/PCM-Frame/training_datas/Style_CLIP_pairs_cat_test_w_norm_512.pth'
